@@ -19,7 +19,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
  
-      - name: docker login
+      - name: docker login build
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
           OC_USERNAME: ${{secrets.OC_USERNAME}}

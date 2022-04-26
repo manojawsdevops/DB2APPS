@@ -29,5 +29,5 @@ jobs:
           
         run: |
             cd $bar && rm -rf *.bar
-            $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_JOB#$GITHUB_RUN_NUMBER.bar -a DBdataUsingHttp   
+            $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_ACTION_REPOSITORY#$GITHUB_RUN_NUMBER.bar -a DBdataUsingHttp   
     

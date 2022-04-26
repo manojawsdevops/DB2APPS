@@ -28,5 +28,5 @@ jobs:
           bar: /home/bandaru/Videos
           
         run: |
-            $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_PATH#GITHUB_RUN_NUMBER.bar -a DBdataUsingHttp   
+            $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_JOB#$GITHUB_RUN_NUMBER.bar -a DBdataUsingHttp   
     

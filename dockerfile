@@ -14,7 +14,7 @@ ENV LD_LIBRARY_PATH /home/aceuser/db2cli_odbc_driver/odbc_cli/clidriver/lib
 ENV IE02_PATH=/opt/IBM/ace-11.0.0.6/ie02
 WORKDIR /home/aceuser
 USER aceuser
-COPY DBdataUsingHttp-1.bar /home/aceuser/initial-config/bars/
+COPY *.bar /home/aceuser/initial-config/bars/
 COPY initial-config/odbcini/* /home/aceuser/initial-config/odbcini/
 COPY setdbparms.txt /home/aceuser/initial-config/setdbparms/
 #COPY initial-config/policy/* /home/aceuser/initial-config/policy/

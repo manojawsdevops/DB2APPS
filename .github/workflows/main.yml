@@ -26,8 +26,8 @@ jobs:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
           OC_USERNAME: ${{secrets.OC_USERNAME}}
           OC_PASSWORD: ${{secrets.OC_PASSWORD}}
-          BARCREATION: "/opt/ace-11.0.0.7/tools/mqsicreatebar"
-          bar: "/home/bandaru/Videos"
+          BARCREATION: /opt/ace-11.0.0.7/tools/mqsicreatebar
+          bar: /home/bandaru/Videos
           
         run: |
             $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_JOB-$GITHUB_RUN_ID.bar -a DBdataUsingHttp'      

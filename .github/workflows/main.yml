@@ -27,7 +27,9 @@ jobs:
           BARCREATION: /opt/ace-11.0.0.7/tools/mqsicreatebar
           bar: /home/bandaru/Music/sampleproject/DB2APPS
           
+      - uses: actions/checkout@master    
       - name: SonarQube Scan
+        uses: kitabisa/sonarqube-action@master
         with:
           host: ${{ secrets.SONAR_HOST }}
           login: ${{ secrets.SONAR_TOKEN }}

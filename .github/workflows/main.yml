@@ -30,5 +30,5 @@ jobs:
         run: |
             cd $bar && rm -rf *bar
             $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_JOB#$GITHUB_RUN_NUMBER.bar -a DBdataUsingHttp 
-            docker build -t db:v1 -f /home/bandaru/Music/sampleproject/DB2APPS/dockerfile .
+            docker build -t $github.job#$github.run_id:v1 -f /home/bandaru/Music/sampleproject/DB2APPS/dockerfile .
 

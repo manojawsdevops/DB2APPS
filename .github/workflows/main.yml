@@ -18,9 +18,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Build with Ant
-        run: ant -noinput -buildfile build.xml
-   
+ 
       - name: docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}

@@ -19,7 +19,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
  
-      - name: Build bar file
+      - name: docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
           OC_USERNAME: ${{secrets.OC_USERNAME}}
@@ -28,6 +28,5 @@ jobs:
           bar: /home/bandaru/Videos
           
         run: |
-            cd $bar && rm -rf *.bar
-            $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_PATH#$GITHUB_RUN_NUMBER.bar -a DBdataUsingHttp   
+            $BARCREATION -data $GITHUB_WORKSPACE -b $bar/$GITHUB_JOB-$GITHUB_RUN_ID.bar -a DBdataUsingHttp   
     

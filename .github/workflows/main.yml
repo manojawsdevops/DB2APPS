@@ -25,7 +25,7 @@ jobs:
           OC_USERNAME: ${{secrets.OC_USERNAME}}
           OC_PASSWORD: ${{secrets.OC_PASSWORD}}
           BARCREATION: /opt/ace-11.0.0.7/tools/mqsicreatebar
-          bar: /home/bandaru/Videos
+          bar: /home/bandaru/Music/sampleproject/DB2APPS
           
         run: |
             cd $bar && rm -rf *bar
